@@ -1,0 +1,22 @@
+{
+	"name": "doge-passwd",
+	"description": "Simple password hash generator",
+	"version": "0.1.0-1",
+	"main": "lib/index.js",
+	"bin": {
+		"doge-passwd": "lib/cli.js"
+	},
+	"scripts": {
+		"start": "node lib/cli",
+		"test": "npx nsmt"
+	},
+	"author": "Prokop Schield",
+	"license": "GPL-3.0-or-later",
+	"devDependencies": {
+		"@types/node": ">=14"
+	},
+	"keywords": [],
+	"dependencies": {
+		"blakets": "^0.0.0-3"
+	}
+}
