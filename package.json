@@ -1,7 +1,7 @@
 {
 	"name": "doge-passwd",
 	"description": "Simple password hash generator",
-	"version": "0.1.0-3",
+	"version": "0.1.0-4",
 	"main": "lib/index.js",
 	"bin": {
 		"doge-passwd": "lib/cli.js"
@@ -17,6 +17,6 @@
 	},
 	"keywords": [],
 	"dependencies": {
-		"blakets": "^0.0.0-3"
+		"blakets": "^0.0.0-4"
 	}
 }

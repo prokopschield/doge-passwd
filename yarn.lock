@@ -3,14 +3,14 @@
 
 
 "@types/node@>=14":
-  version "15.12.4"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-15.12.4.tgz#e1cf817d70a1e118e81922c4ff6683ce9d422e26"
-  integrity sha512-zrNj1+yqYF4WskCMOHwN+w9iuD12+dGm0rQ35HLl9/Ouuq52cEtd0CH9qMgrdNmi5ejC1/V7vKEXYubB+65DkA==
+  version "16.4.0"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.4.0.tgz#2c219eaa3b8d1e4d04f4dd6e40bc68c7467d5272"
+  integrity sha512-HrJuE7Mlqcjj+00JqMWpZ3tY8w7EUd+S0U3L1+PQSWiXZbOgyQDvi+ogoUxaHApPJq5diKxYBQwA3iIlNcPqOg==
 
-blakets@^0.0.0-3:
-  version "0.0.0-3"
-  resolved "https://registry.yarnpkg.com/blakets/-/blakets-0.0.0-3.tgz#5e0a9687feafa6d83c00728c96c4900ea9f9d2fc"
-  integrity sha512-UiUSTzuxqcye9amieZ7qVPLSsxvL46LLB8Fjbywk6uza12jjxtLp2Yw8VOjhz2F3EVzMb2Q5D3mgH3BwufjchA==
+blakets@^0.0.0-4:
+  version "0.0.0-4"
+  resolved "https://registry.yarnpkg.com/blakets/-/blakets-0.0.0-4.tgz#3f574a8bd431a8ac75ac8c913a4143e7f80ff3d3"
+  integrity sha512-3PFE71fmj0uxwqgMsq7+T5/hDINCddx3+x6qTrbb6FQUPwjB3+2yup1dKUJQYjC7Y4R3JDiy03TatMIOXiknRw==
   dependencies:
     doge-json ">=1.1.0-3"
 
