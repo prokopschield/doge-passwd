@@ -69,3 +69,53 @@ export function verify(passwd: string | Uint8Array, hashed: string): boolean {
 		)
 	);
 }
+
+/**
+ * The same as hash(), but returns hexadecimal.
+ *
+ * Must be verified using verify_hex()
+ *
+ * @param passwd Password
+ * @param outlen Output length (in hex chars)
+ * @param salt Optional, must be a hex string
+ */
+export function hash_hex(
+	passwd: string | Uint8Array,
+	outlen: number = 64,
+	salt?: string | Uint8Array
+) {
+	outlen >>= 1;
+	const salt_length = outlen >> 1;
+	const hash_length = outlen - salt_length;
+	salt ||= generate_salt(salt_length);
+	if (typeof salt === 'string') {
+		salt = salt.match(/^[0-9a-f]+$/gi)
+			? Buffer.from(salt, 'hex')
+			: Buffer.from(salt);
+	}
+	if (salt.length !== salt_length) {
+		salt = generate_salt(salt_length, salt);
+	}
+	const ctx = blake2sInit(hash_length);
+	blake2sUpdate(ctx, salt);
+	blake2sUpdate(ctx, Buffer.from(passwd));
+	const final = Buffer.from(blake2sFinal(ctx));
+	return `${final.toString('hex')}${Buffer.from(salt).toString('hex')}`;
+}
+
+/**
+ * Verify passwd against hex hash
+ * @param passwd Data being hashed
+ * @param hashed The correct hash to check against
+ * @returns true if passwd is correct, false otherwise
+ */
+export function verify_hex(
+	passwd: string | Uint8Array,
+	hashed: string
+): boolean {
+	const salt_length = (hashed.length >> 2) << 1;
+	return (
+		hashed ===
+		hash_hex(passwd, hashed.length, hashed.substr(hashed.length - salt_length))
+	);
+}
