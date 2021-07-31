@@ -29,13 +29,13 @@ export function generate_salt(
 /**
  * Generate verifyable hash
  * @param passwd Data being hashed
- * @param outlen Desired output length, up to 64
+ * @param outlen Desired output length, up to 80
  * @param salt Optional pre-determined salt to use
  * @returns verify()-able hash
  */
 export function hash(
 	passwd: string | Uint8Array,
-	outlen: number = 32,
+	outlen: number = 64,
 	salt?: Uint8Array
 ): string {
 	outlen *= 3 / 4;
