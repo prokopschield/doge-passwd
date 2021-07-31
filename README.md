@@ -17,3 +17,27 @@ let hashed = hash(password, hash_length);
 
 console.log(verify(password, hashed)); // true
 ```
+
+## methods
+
+Regular - `hash(), verify()`
+
+Hex - `hash_hex(), verify_hex()`
+
+Always use the correct verify() function!
+
+## length
+
+For _regular_ hashes, length must a multiple of 8, <= 80.
+
+For _hex_ hashes, length must be a multiple of 2, <= 128.
+
+Longer length = more security!
+
+## Frontend Authentication
+
+You _can_ use this package for frontend authentication.
+
+It is likely **_not_** a good idea.
+
+However, if your database does get leaked, doge-passwd hashes will be much harder to crack than, for example, a simple SHA-256.
