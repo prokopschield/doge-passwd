@@ -7,14 +7,14 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-16.4.0.tgz#2c219eaa3b8d1e4d04f4dd6e40bc68c7467d5272"
   integrity sha512-HrJuE7Mlqcjj+00JqMWpZ3tY8w7EUd+S0U3L1+PQSWiXZbOgyQDvi+ogoUxaHApPJq5diKxYBQwA3iIlNcPqOg==
 
-blakets@^0.0.0-4:
-  version "0.0.0-4"
-  resolved "https://registry.yarnpkg.com/blakets/-/blakets-0.0.0-4.tgz#3f574a8bd431a8ac75ac8c913a4143e7f80ff3d3"
-  integrity sha512-3PFE71fmj0uxwqgMsq7+T5/hDINCddx3+x6qTrbb6FQUPwjB3+2yup1dKUJQYjC7Y4R3JDiy03TatMIOXiknRw==
+blakets@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/blakets/-/blakets-0.1.2.tgz#dd6c9bd39a0a00ec3a35b7476190ed8b6450abf6"
+  integrity sha512-POW5KGolGS1e/IjgYdm/mog6ib2gJBVqVKORo4sWCwLTKbCmQIqGjiPoqEzel1qy6rzL1cOd4nDNW3OcM0X6Eg==
   dependencies:
-    doge-json ">=1.1.0-3"
+    doge-json "^1.1.2"
 
-doge-json@>=1.1.0-3:
-  version "1.1.0-3"
-  resolved "https://registry.yarnpkg.com/doge-json/-/doge-json-1.1.0-3.tgz#4cdedf2daf6116bce73c26aed7e52c6041804c4f"
-  integrity sha512-TO+n1rJOto2ildgC8KpaZ1OwrGTi+EL/F9dwnn7o4MMMuoGP20aP4p5jkO69C0SGGVVPgsk8+NxaClA5boGDYQ==
+doge-json@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/doge-json/-/doge-json-1.1.2.tgz#2ce8001433ae70780e83b966154fa25d2c7775a5"
+  integrity sha512-0kDbITkoI1Aj+8GpYQouumaShq+Ernm72GfRfoO+7aqta1eB3hq5zkwx8u853E1hEtvoyHQGQJdDYf4hJGXn0Q==
