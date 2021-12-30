@@ -8,11 +8,15 @@ module.exports = () => {
 		let l = h.length;
 		if (l !== i) {
 			console.log({ h });
-			throw new Error(`tests/len.js: hash of length ${i} returned length ${l}`);
+			throw new Error(
+				`tests/len.js: hash of length ${i} returned length ${l}`
+			);
 		}
 		if (!verify(passwd, h)) {
 			console.log({ h });
-			throw new Error(`tests/len.js: hash of length ${i} failed to verify`);
+			throw new Error(
+				`tests/len.js: hash of length ${i} failed to verify`
+			);
 		}
 	}
 };
