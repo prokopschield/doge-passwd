@@ -47,7 +47,9 @@ export function decode(input: string) {
 	let mod = 0;
 	let tmp = 0;
 	for (const chr of input) {
-		tmp += alphabet.includes(chr) ? alphabet.indexOf(chr) : chr.charCodeAt(0);
+		tmp += alphabet.includes(chr)
+			? alphabet.indexOf(chr)
+			: chr.charCodeAt(0);
 		if (mod === 0) {
 			// state: 00000000 00AAAAAA
 		} else if (mod === 1) {
