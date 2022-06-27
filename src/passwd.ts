@@ -116,6 +116,10 @@ export function verify_hex(
 	const salt_length = (hashed.length >> 2) << 1;
 	return (
 		hashed ===
-		hash_hex(passwd, hashed.length, hashed.substr(hashed.length - salt_length))
+		hash_hex(
+			passwd,
+			hashed.length,
+			hashed.substr(hashed.length - salt_length)
+		)
 	);
 }
