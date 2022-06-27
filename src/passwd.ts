@@ -119,7 +119,7 @@ export function verify_hex(
 		hash_hex(
 			passwd,
 			hashed.length,
-			hashed.substr(hashed.length - salt_length)
+			hashed.slice(hashed.length - salt_length)
 		)
 	);
 }
