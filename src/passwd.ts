@@ -36,8 +36,11 @@ export function generate_salt(
 export function hash(
 	passwd: string | Uint8Array,
 	outlen: number = 64,
-	salt?: Uint8Array
+	salt?: Uint8Array | string
 ): string {
+	if (typeof salt === 'string') {
+		salt = decode(salt);
+	}
 	outlen *= 3 / 4;
 	const salt_length = outlen >> 1;
 	const hash_length = outlen - salt_length;
