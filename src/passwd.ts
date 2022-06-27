@@ -126,3 +126,12 @@ export function verify_hex(
 		)
 	);
 }
+
+/**
+ * Extract salt from a hashed string
+ * @param hashed the hashed password
+ * @returns the salt (in the same format as the hashed string, base64 or hex)
+ */
+export function extract_salt(hashed: string) {
+	return hashed.slice(hashed.length >> 1);
+}
