@@ -18,6 +18,7 @@
 	},
 	"keywords": [],
 	"dependencies": {
+		"@prokopschield/base64": "^0.1.0-1",
 		"blakets": "^0.1.2"
 	}
 }

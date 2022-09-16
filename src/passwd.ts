@@ -1,10 +1,10 @@
+import { decode, encode } from '@prokopschield/base64';
 import {
 	blake2sInit,
 	blake2sUpdate,
 	blake2sCompress,
 	blake2sFinal,
 } from 'blakets';
-import { decode, encode } from './coder';
 
 /**
  * Generate salt Uint8Array

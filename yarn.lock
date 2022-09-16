@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@prokopschield/base64@^0.1.0-1":
+  version "0.1.0-1"
+  resolved "https://registry.yarnpkg.com/@prokopschield/base64/-/base64-0.1.0-1.tgz#aebb681267dc47651689cf5b1ceb5e3454e076b5"
+  integrity sha512-6MAb3snUXKF47Hbd6kJ9S73m/5XWq6CpZuAaA5ShloUStdTl3dv2shj+yxLl3w/bNw32zvHSpHCRHZBOIq019g==
+
 "@types/node@>=14":
   version "16.4.0"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-16.4.0.tgz#2c219eaa3b8d1e4d04f4dd6e40bc68c7467d5272"
